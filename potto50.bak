@@ -1,0 +1,2189 @@
+EESchema Schematic File Version 4
+LIBS:potto50-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR01
+U 1 1 5EA93443
+P 2630 990
+F 0 "#PWR01" H 2630 740 50  0001 C CNN
+F 1 "GND" H 2635 817 50  0000 C CNN
+F 2 "" H 2630 990 50  0001 C CNN
+F 3 "" H 2630 990 50  0001 C CNN
+	1    2630 990 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5EA93DEE
+P 2630 1190
+F 0 "#PWR03" H 2630 1040 50  0001 C CNN
+F 1 "VCC" H 2647 1363 50  0000 C CNN
+F 2 "" H 2630 1190 50  0001 C CNN
+F 3 "" H 2630 1190 50  0001 C CNN
+	1    2630 1190
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2480 990  2630 990 
+Wire Wire Line
+	2630 1190 2480 1190
+Wire Wire Line
+	1080 1190 780  1190
+Wire Wire Line
+	1080 1090 780  1090
+Wire Wire Line
+	780  1090 780  1190
+Connection ~ 780  1190
+Wire Wire Line
+	780  1190 630  1190
+Text GLabel 4230 825  1    50   Input ~ 0
+col0
+Text GLabel 2480 1290 2    50   Input ~ 0
+col0
+Text GLabel 2480 1390 2    50   Input ~ 0
+col1
+Text GLabel 2480 1590 2    50   Input ~ 0
+col3
+Text GLabel 2480 1690 2    50   Input ~ 0
+col4
+Text GLabel 2480 1790 2    50   Input ~ 0
+col5
+Text GLabel 2480 1890 2    50   Input ~ 0
+col6
+$Comp
+L kbd:SW_PUSH SW14
+U 1 1 5EB6A031
+P 1145 2655
+F 0 "SW14" H 1145 2910 50  0000 C CNN
+F 1 "RESET" H 1145 2819 50  0000 C CNN
+F 2 "kbd:ResetSW" H 1145 2655 50  0001 C CNN
+F 3 "" H 1145 2655 50  0000 C CNN
+	1    1145 2655
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5EB6C1FC
+P 1445 2655
+F 0 "#PWR08" H 1445 2405 50  0001 C CNN
+F 1 "GND" H 1450 2482 50  0000 C CNN
+F 2 "" H 1445 2655 50  0001 C CNN
+F 3 "" H 1445 2655 50  0001 C CNN
+	1    1445 2655
+	1    0    0    -1  
+$EndComp
+Text GLabel 845  2655 0    50   Input ~ 0
+reset
+Text GLabel 2930 1090 2    50   Input ~ 0
+reset
+Wire Wire Line
+	2480 1090 2930 1090
+$Comp
+L kbd:MJ-4PP-9 J2
+U 1 1 5EB7004F
+P 775 3430
+F 0 "J2" H 806 3706 50  0000 C CNN
+F 1 "MJ-4PP-9" H 806 3615 50  0000 C CNN
+F 2 "kbd:MJ-4PP-9_1side" H 1050 3605 50  0001 C CNN
+F 3 "~" H 1050 3605 50  0001 C CNN
+	1    775  3430
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EB71314
+P 1745 2505
+F 0 "#PWR05" H 1745 2255 50  0001 C CNN
+F 1 "GND" H 1750 2332 50  0000 C CNN
+F 2 "" H 1745 2505 50  0001 C CNN
+F 3 "" H 1745 2505 50  0001 C CNN
+	1    1745 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5EB71CA5
+P 2145 2505
+F 0 "#PWR06" H 2145 2355 50  0001 C CNN
+F 1 "VCC" H 2162 2678 50  0000 C CNN
+F 2 "" H 2145 2505 50  0001 C CNN
+F 3 "" H 2145 2505 50  0001 C CNN
+	1    2145 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EB728DE
+P 1745 2505
+F 0 "#FLG01" H 1745 2580 50  0001 C CNN
+F 1 "PWR_FLAG" H 1745 2678 50  0000 C CNN
+F 2 "" H 1745 2505 50  0001 C CNN
+F 3 "~" H 1745 2505 50  0001 C CNN
+	1    1745 2505
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5EB73003
+P 2145 2505
+F 0 "#FLG02" H 2145 2580 50  0001 C CNN
+F 1 "PWR_FLAG" H 2145 2678 50  0000 C CNN
+F 2 "" H 2145 2505 50  0001 C CNN
+F 3 "~" H 2145 2505 50  0001 C CNN
+	1    2145 2505
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5EB75636
+P 1225 3255
+F 0 "#PWR011" H 1225 3105 50  0001 C CNN
+F 1 "VCC" H 1242 3428 50  0000 C CNN
+F 2 "" H 1225 3255 50  0001 C CNN
+F 3 "" H 1225 3255 50  0001 C CNN
+	1    1225 3255
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5EB76225
+P 1090 3655
+F 0 "#PWR012" H 1090 3405 50  0001 C CNN
+F 1 "GND" H 1095 3482 50  0000 C CNN
+F 2 "" H 1090 3655 50  0001 C CNN
+F 3 "" H 1090 3655 50  0001 C CNN
+	1    1090 3655
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  3405 1225 3405
+Wire Wire Line
+	1225 3405 1225 3255
+Wire Wire Line
+	975  3455 1090 3455
+Wire Wire Line
+	1090 3455 1090 3655
+$Comp
+L Device:Jumper JP1
+U 1 1 5EB850F9
+P 1955 3505
+F 0 "JP1" H 1955 3280 50  0000 C CNN
+F 1 "JP" H 1955 3371 50  0000 C CNN
+F 2 "kbd:Jumper" H 1955 3505 50  0001 C CNN
+F 3 "~" H 1955 3505 50  0001 C CNN
+	1    1955 3505
+	-1   0    0    1   
+$EndComp
+Text GLabel 2255 3505 2    50   Input ~ 0
+data
+$Comp
+L Connector_Generic:Conn_01x01 P2
+U 1 1 5EAEDF23
+P 1655 3705
+F 0 "P2" V 1527 3785 50  0000 L CNN
+F 1 "i2c-pin" V 1618 3785 50  0000 L CNN
+F 2 "kbd:1pin_conn" H 1655 3705 50  0001 C CNN
+F 3 "~" H 1655 3705 50  0001 C CNN
+	1    1655 3705
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P1
+U 1 1 5EAF7DF7
+P 1400 3155
+F 0 "P1" V 1364 3067 50  0000 R CNN
+F 1 "i2c-pin" V 1273 3067 50  0000 R CNN
+F 2 "kbd:1pin_conn" H 1400 3155 50  0001 C CNN
+F 3 "~" H 1400 3155 50  0001 C CNN
+	1    1400 3155
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1655 3505
+Wire Wire Line
+	975  3355 1400 3355
+Wire Wire Line
+	975  3505 1655 3505
+Text GLabel 1080 990  0    50   Input ~ 0
+data
+Wire Wire Line
+	4230 1975 4230 2775
+Connection ~ 4230 1975
+Text GLabel 10180 1675 1    50   Input ~ 0
+col6
+Text GLabel 6680 3875 0    50   Input ~ 0
+row3
+Text GLabel 4730 3075 0    50   Input ~ 0
+row2
+Text GLabel 4730 2275 0    50   Input ~ 0
+row1
+Text GLabel 4730 1575 0    50   Input ~ 0
+row0
+Text GLabel 9180 875  1    50   Input ~ 0
+col5
+Text GLabel 8180 875  1    50   Input ~ 0
+col4
+Text GLabel 7180 875  1    50   Input ~ 0
+col3
+Text GLabel 6230 825  1    50   Input ~ 0
+col2
+Text GLabel 5230 825  1    50   Input ~ 0
+col1
+Wire Wire Line
+	9780 3875 10780 3875
+Connection ~ 9780 3875
+Wire Wire Line
+	8780 3875 9780 3875
+Connection ~ 8780 3875
+Wire Wire Line
+	7780 3875 8780 3875
+Connection ~ 7780 3875
+Wire Wire Line
+	6830 3875 7780 3875
+Connection ~ 6830 3875
+Wire Wire Line
+	6680 3875 6830 3875
+Wire Wire Line
+	9780 3075 10780 3075
+Connection ~ 9780 3075
+Wire Wire Line
+	8780 3075 9780 3075
+Connection ~ 8780 3075
+Wire Wire Line
+	7780 3075 8780 3075
+Connection ~ 7780 3075
+Wire Wire Line
+	6830 3075 7780 3075
+Connection ~ 6830 3075
+Wire Wire Line
+	5830 3075 6830 3075
+Connection ~ 5830 3075
+Wire Wire Line
+	4830 3075 5830 3075
+Connection ~ 4830 3075
+Wire Wire Line
+	4730 3075 4830 3075
+Wire Wire Line
+	9780 2275 10780 2275
+Connection ~ 9780 2275
+Wire Wire Line
+	8780 2275 9780 2275
+Connection ~ 8780 2275
+Wire Wire Line
+	7780 2275 8780 2275
+Connection ~ 7780 2275
+Wire Wire Line
+	6830 2275 7780 2275
+Connection ~ 6830 2275
+Wire Wire Line
+	5830 2275 6830 2275
+Connection ~ 5830 2275
+Wire Wire Line
+	4830 2275 5830 2275
+Connection ~ 4830 2275
+Wire Wire Line
+	4730 2275 4830 2275
+Wire Wire Line
+	8780 1575 9780 1575
+Connection ~ 8780 1575
+Wire Wire Line
+	7780 1575 8780 1575
+Connection ~ 7780 1575
+Wire Wire Line
+	6830 1575 7780 1575
+Connection ~ 6830 1575
+Wire Wire Line
+	5830 1575 6830 1575
+Connection ~ 5830 1575
+Wire Wire Line
+	4830 1575 5830 1575
+Connection ~ 4830 1575
+Wire Wire Line
+	4730 1575 4830 1575
+Connection ~ 6230 2775
+Wire Wire Line
+	6230 2775 6230 3575
+Wire Wire Line
+	10180 2775 10180 3575
+Connection ~ 10180 2775
+Wire Wire Line
+	10180 1975 10180 2775
+Connection ~ 10180 1975
+Wire Wire Line
+	10180 1675 10180 1975
+Wire Wire Line
+	9180 2775 9180 3575
+Connection ~ 9180 2775
+Wire Wire Line
+	9180 1975 9180 2775
+Connection ~ 9180 1975
+Wire Wire Line
+	9180 1275 9180 1975
+Connection ~ 9180 1275
+Wire Wire Line
+	9180 875  9180 1275
+Wire Wire Line
+	8180 2775 8180 3575
+Connection ~ 8180 2775
+Wire Wire Line
+	8180 1975 8180 2775
+Connection ~ 8180 1975
+Wire Wire Line
+	8180 1275 8180 1975
+Connection ~ 8180 1275
+Wire Wire Line
+	8180 875  8180 1275
+Wire Wire Line
+	7180 2775 7180 3575
+Connection ~ 7180 2775
+Wire Wire Line
+	7180 1975 7180 2775
+Connection ~ 7180 1975
+Wire Wire Line
+	7180 1275 7180 1975
+Connection ~ 7180 1275
+Wire Wire Line
+	7180 875  7180 1275
+Wire Wire Line
+	6230 1975 6230 2775
+Connection ~ 6230 1975
+Wire Wire Line
+	6230 1275 6230 1975
+Connection ~ 6230 1275
+Wire Wire Line
+	6230 825  6230 1275
+Wire Wire Line
+	5230 1975 5230 2775
+Connection ~ 5230 1975
+Wire Wire Line
+	5230 1275 5230 1975
+Connection ~ 5230 1275
+Wire Wire Line
+	5230 825  5230 1275
+$Comp
+L Simulation_SPICE:DIODE D25
+U 1 1 5EAEFD49
+P 10780 3725
+F 0 "D25" V 10734 3805 50  0000 L CNN
+F 1 "DIODE" V 10825 3805 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10780 3725 50  0001 C CNN
+F 3 "~" H 10780 3725 50  0001 C CNN
+F 4 "Y" H 10780 3725 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10780 3725 50  0001 L CNN "Spice_Primitive"
+	1    10780 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D24
+U 1 1 5EAEF7B2
+P 9780 3725
+F 0 "D24" V 9734 3805 50  0000 L CNN
+F 1 "DIODE" V 9825 3805 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9780 3725 50  0001 C CNN
+F 3 "~" H 9780 3725 50  0001 C CNN
+F 4 "Y" H 9780 3725 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9780 3725 50  0001 L CNN "Spice_Primitive"
+	1    9780 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D23
+U 1 1 5EAEF401
+P 8780 3725
+F 0 "D23" V 8734 3805 50  0000 L CNN
+F 1 "DIODE" V 8825 3805 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8780 3725 50  0001 C CNN
+F 3 "~" H 8780 3725 50  0001 C CNN
+F 4 "Y" H 8780 3725 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8780 3725 50  0001 L CNN "Spice_Primitive"
+	1    8780 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D22
+U 1 1 5EAEEEA0
+P 7780 3725
+F 0 "D22" V 7734 3805 50  0000 L CNN
+F 1 "DIODE" V 7825 3805 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7780 3725 50  0001 C CNN
+F 3 "~" H 7780 3725 50  0001 C CNN
+F 4 "Y" H 7780 3725 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7780 3725 50  0001 L CNN "Spice_Primitive"
+	1    7780 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D21
+U 1 1 5EAEE867
+P 6830 3725
+F 0 "D21" V 6784 3805 50  0000 L CNN
+F 1 "DIODE" V 6875 3805 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6830 3725 50  0001 C CNN
+F 3 "~" H 6830 3725 50  0001 C CNN
+F 4 "Y" H 6830 3725 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6830 3725 50  0001 L CNN "Spice_Primitive"
+	1    6830 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D20
+U 1 1 5EAEE522
+P 10780 2925
+F 0 "D20" V 10734 3005 50  0000 L CNN
+F 1 "DIODE" V 10825 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10780 2925 50  0001 C CNN
+F 3 "~" H 10780 2925 50  0001 C CNN
+F 4 "Y" H 10780 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10780 2925 50  0001 L CNN "Spice_Primitive"
+	1    10780 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D19
+U 1 1 5EAEE1A7
+P 9780 2925
+F 0 "D19" V 9734 3005 50  0000 L CNN
+F 1 "DIODE" V 9825 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9780 2925 50  0001 C CNN
+F 3 "~" H 9780 2925 50  0001 C CNN
+F 4 "Y" H 9780 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9780 2925 50  0001 L CNN "Spice_Primitive"
+	1    9780 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D18
+U 1 1 5EAEDA7B
+P 8780 2925
+F 0 "D18" V 8734 3005 50  0000 L CNN
+F 1 "DIODE" V 8825 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8780 2925 50  0001 C CNN
+F 3 "~" H 8780 2925 50  0001 C CNN
+F 4 "Y" H 8780 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8780 2925 50  0001 L CNN "Spice_Primitive"
+	1    8780 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D17
+U 1 1 5EAED385
+P 7780 2925
+F 0 "D17" V 7734 3005 50  0000 L CNN
+F 1 "DIODE" V 7825 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7780 2925 50  0001 C CNN
+F 3 "~" H 7780 2925 50  0001 C CNN
+F 4 "Y" H 7780 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7780 2925 50  0001 L CNN "Spice_Primitive"
+	1    7780 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D16
+U 1 1 5EAECE5A
+P 6830 2925
+F 0 "D16" V 6784 3005 50  0000 L CNN
+F 1 "DIODE" V 6875 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6830 2925 50  0001 C CNN
+F 3 "~" H 6830 2925 50  0001 C CNN
+F 4 "Y" H 6830 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6830 2925 50  0001 L CNN "Spice_Primitive"
+	1    6830 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D15
+U 1 1 5EAEC8DE
+P 5830 2925
+F 0 "D15" V 5784 3005 50  0000 L CNN
+F 1 "DIODE" V 5875 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5830 2925 50  0001 C CNN
+F 3 "~" H 5830 2925 50  0001 C CNN
+F 4 "Y" H 5830 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5830 2925 50  0001 L CNN "Spice_Primitive"
+	1    5830 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D14
+U 1 1 5EAEC4F7
+P 4830 2925
+F 0 "D14" V 4784 3005 50  0000 L CNN
+F 1 "DIODE" V 4875 3005 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4830 2925 50  0001 C CNN
+F 3 "~" H 4830 2925 50  0001 C CNN
+F 4 "Y" H 4830 2925 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4830 2925 50  0001 L CNN "Spice_Primitive"
+	1    4830 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D13
+U 1 1 5EAEC038
+P 10780 2125
+F 0 "D13" V 10734 2205 50  0000 L CNN
+F 1 "DIODE" V 10825 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10780 2125 50  0001 C CNN
+F 3 "~" H 10780 2125 50  0001 C CNN
+F 4 "Y" H 10780 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10780 2125 50  0001 L CNN "Spice_Primitive"
+	1    10780 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D12
+U 1 1 5EAEB405
+P 9780 2125
+F 0 "D12" V 9734 2205 50  0000 L CNN
+F 1 "DIODE" V 9825 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9780 2125 50  0001 C CNN
+F 3 "~" H 9780 2125 50  0001 C CNN
+F 4 "Y" H 9780 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9780 2125 50  0001 L CNN "Spice_Primitive"
+	1    9780 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D11
+U 1 1 5EAEAEF5
+P 8780 2125
+F 0 "D11" V 8734 2205 50  0000 L CNN
+F 1 "DIODE" V 8825 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8780 2125 50  0001 C CNN
+F 3 "~" H 8780 2125 50  0001 C CNN
+F 4 "Y" H 8780 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8780 2125 50  0001 L CNN "Spice_Primitive"
+	1    8780 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D10
+U 1 1 5EAEA8D7
+P 7780 2125
+F 0 "D10" V 7734 2205 50  0000 L CNN
+F 1 "DIODE" V 7825 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7780 2125 50  0001 C CNN
+F 3 "~" H 7780 2125 50  0001 C CNN
+F 4 "Y" H 7780 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7780 2125 50  0001 L CNN "Spice_Primitive"
+	1    7780 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D9
+U 1 1 5EAEA340
+P 6830 2125
+F 0 "D9" V 6784 2205 50  0000 L CNN
+F 1 "DIODE" V 6875 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6830 2125 50  0001 C CNN
+F 3 "~" H 6830 2125 50  0001 C CNN
+F 4 "Y" H 6830 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6830 2125 50  0001 L CNN "Spice_Primitive"
+	1    6830 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D8
+U 1 1 5EAE9DA9
+P 5830 2125
+F 0 "D8" V 5784 2205 50  0000 L CNN
+F 1 "DIODE" V 5875 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5830 2125 50  0001 C CNN
+F 3 "~" H 5830 2125 50  0001 C CNN
+F 4 "Y" H 5830 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5830 2125 50  0001 L CNN "Spice_Primitive"
+	1    5830 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D7
+U 1 1 5EAE97DC
+P 4830 2125
+F 0 "D7" V 4784 2205 50  0000 L CNN
+F 1 "DIODE" V 4875 2205 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4830 2125 50  0001 C CNN
+F 3 "~" H 4830 2125 50  0001 C CNN
+F 4 "Y" H 4830 2125 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4830 2125 50  0001 L CNN "Spice_Primitive"
+	1    4830 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D6
+U 1 1 5EAE920F
+P 9780 1425
+F 0 "D6" V 9734 1505 50  0000 L CNN
+F 1 "DIODE" V 9825 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9780 1425 50  0001 C CNN
+F 3 "~" H 9780 1425 50  0001 C CNN
+F 4 "Y" H 9780 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9780 1425 50  0001 L CNN "Spice_Primitive"
+	1    9780 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D5
+U 1 1 5EAE8CFF
+P 8780 1425
+F 0 "D5" V 8734 1505 50  0000 L CNN
+F 1 "DIODE" V 8825 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8780 1425 50  0001 C CNN
+F 3 "~" H 8780 1425 50  0001 C CNN
+F 4 "Y" H 8780 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8780 1425 50  0001 L CNN "Spice_Primitive"
+	1    8780 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D4
+U 1 1 5EAE86AB
+P 7780 1425
+F 0 "D4" V 7734 1505 50  0000 L CNN
+F 1 "DIODE" V 7825 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7780 1425 50  0001 C CNN
+F 3 "~" H 7780 1425 50  0001 C CNN
+F 4 "Y" H 7780 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7780 1425 50  0001 L CNN "Spice_Primitive"
+	1    7780 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D3
+U 1 1 5EAE8180
+P 6830 1425
+F 0 "D3" V 6784 1505 50  0000 L CNN
+F 1 "DIODE" V 6875 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6830 1425 50  0001 C CNN
+F 3 "~" H 6830 1425 50  0001 C CNN
+F 4 "Y" H 6830 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6830 1425 50  0001 L CNN "Spice_Primitive"
+	1    6830 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D2
+U 1 1 5EAE7C3A
+P 5830 1425
+F 0 "D2" V 5784 1505 50  0000 L CNN
+F 1 "DIODE" V 5875 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5830 1425 50  0001 C CNN
+F 3 "~" H 5830 1425 50  0001 C CNN
+F 4 "Y" H 5830 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5830 1425 50  0001 L CNN "Spice_Primitive"
+	1    5830 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D1
+U 1 1 5EAE6B28
+P 4830 1425
+F 0 "D1" V 4784 1505 50  0000 L CNN
+F 1 "DIODE" V 4875 1505 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4830 1425 50  0001 C CNN
+F 3 "~" H 4830 1425 50  0001 C CNN
+F 4 "Y" H 4830 1425 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4830 1425 50  0001 L CNN "Spice_Primitive"
+	1    4830 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW22
+U 1 1 5EAA3CD0
+P 6530 3575
+F 0 "SW22" H 6530 3830 50  0000 C CNN
+F 1 "SW_PUSH" H 6530 3739 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6530 3575 50  0001 C CNN
+F 3 "" H 6530 3575 50  0000 C CNN
+	1    6530 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW23
+U 1 1 5EAA3CE2
+P 7480 3575
+F 0 "SW23" H 7480 3830 50  0000 C CNN
+F 1 "SW_PUSH" H 7480 3739 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7480 3575 50  0001 C CNN
+F 3 "" H 7480 3575 50  0000 C CNN
+	1    7480 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW24
+U 1 1 5EAA3CE8
+P 8480 3575
+F 0 "SW24" H 8480 3830 50  0000 C CNN
+F 1 "SW_PUSH" H 8480 3739 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8480 3575 50  0001 C CNN
+F 3 "" H 8480 3575 50  0000 C CNN
+	1    8480 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW25
+U 1 1 5EAA3CEE
+P 9480 3575
+F 0 "SW25" H 9480 3830 50  0000 C CNN
+F 1 "SW_PUSH" H 9480 3739 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9480 3575 50  0001 C CNN
+F 3 "" H 9480 3575 50  0000 C CNN
+	1    9480 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW26
+U 1 1 5EAA5B57
+P 10480 3575
+F 0 "SW26" H 10480 3830 50  0000 C CNN
+F 1 "SW_PUSH" H 10480 3739 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10480 3575 50  0001 C CNN
+F 3 "" H 10480 3575 50  0000 C CNN
+	1    10480 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW21
+U 1 1 5EAA5B51
+P 10480 2775
+F 0 "SW21" H 10480 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 10480 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10480 2775 50  0001 C CNN
+F 3 "" H 10480 2775 50  0000 C CNN
+	1    10480 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW13
+U 1 1 5EAA5B4B
+P 10480 1975
+F 0 "SW13" H 10480 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 10480 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10480 1975 50  0001 C CNN
+F 3 "" H 10480 1975 50  0000 C CNN
+	1    10480 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW20
+U 1 1 5EAA1F69
+P 9480 2775
+F 0 "SW20" H 9480 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 9480 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9480 2775 50  0001 C CNN
+F 3 "" H 9480 2775 50  0000 C CNN
+	1    9480 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW19
+U 1 1 5EAA1F63
+P 8480 2775
+F 0 "SW19" H 8480 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 8480 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8480 2775 50  0001 C CNN
+F 3 "" H 8480 2775 50  0000 C CNN
+	1    8480 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW18
+U 1 1 5EAA1F5D
+P 7480 2775
+F 0 "SW18" H 7480 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 7480 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7480 2775 50  0001 C CNN
+F 3 "" H 7480 2775 50  0000 C CNN
+	1    7480 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW17
+U 1 1 5EAA1F57
+P 6530 2775
+F 0 "SW17" H 6530 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 6530 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6530 2775 50  0001 C CNN
+F 3 "" H 6530 2775 50  0000 C CNN
+	1    6530 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW16
+U 1 1 5EAA1F51
+P 5530 2775
+F 0 "SW16" H 5530 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 5530 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5530 2775 50  0001 C CNN
+F 3 "" H 5530 2775 50  0000 C CNN
+	1    5530 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW15
+U 1 1 5EAA1F4B
+P 4530 2775
+F 0 "SW15" H 4530 3030 50  0000 C CNN
+F 1 "SW_PUSH" H 4530 2939 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4530 2775 50  0001 C CNN
+F 3 "" H 4530 2775 50  0000 C CNN
+	1    4530 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW12
+U 1 1 5EA9EE64
+P 9480 1975
+F 0 "SW12" H 9480 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 9480 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9480 1975 50  0001 C CNN
+F 3 "" H 9480 1975 50  0000 C CNN
+	1    9480 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW11
+U 1 1 5EA9EE5E
+P 8480 1975
+F 0 "SW11" H 8480 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 8480 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8480 1975 50  0001 C CNN
+F 3 "" H 8480 1975 50  0000 C CNN
+	1    8480 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW10
+U 1 1 5EA9EE58
+P 7480 1975
+F 0 "SW10" H 7480 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 7480 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7480 1975 50  0001 C CNN
+F 3 "" H 7480 1975 50  0000 C CNN
+	1    7480 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW9
+U 1 1 5EA9EE52
+P 6530 1975
+F 0 "SW9" H 6530 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 6530 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6530 1975 50  0001 C CNN
+F 3 "" H 6530 1975 50  0000 C CNN
+	1    6530 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW8
+U 1 1 5EA9EE4C
+P 5530 1975
+F 0 "SW8" H 5530 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 5530 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5530 1975 50  0001 C CNN
+F 3 "" H 5530 1975 50  0000 C CNN
+	1    5530 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW7
+U 1 1 5EA9EE46
+P 4530 1975
+F 0 "SW7" H 4530 2230 50  0000 C CNN
+F 1 "SW_PUSH" H 4530 2139 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4530 1975 50  0001 C CNN
+F 3 "" H 4530 1975 50  0000 C CNN
+	1    4530 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW6
+U 1 1 5EA9C29A
+P 9480 1275
+F 0 "SW6" H 9480 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 9480 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9480 1275 50  0001 C CNN
+F 3 "" H 9480 1275 50  0000 C CNN
+	1    9480 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW5
+U 1 1 5EA9BFD7
+P 8480 1275
+F 0 "SW5" H 8480 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 8480 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8480 1275 50  0001 C CNN
+F 3 "" H 8480 1275 50  0000 C CNN
+	1    8480 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW4
+U 1 1 5EA9BCB8
+P 7480 1275
+F 0 "SW4" H 7480 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 7480 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7480 1275 50  0001 C CNN
+F 3 "" H 7480 1275 50  0000 C CNN
+	1    7480 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW3
+U 1 1 5EA9B743
+P 6530 1275
+F 0 "SW3" H 6530 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 6530 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6530 1275 50  0001 C CNN
+F 3 "" H 6530 1275 50  0000 C CNN
+	1    6530 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW2
+U 1 1 5EA9AE7B
+P 5530 1275
+F 0 "SW2" H 5530 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 5530 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5530 1275 50  0001 C CNN
+F 3 "" H 5530 1275 50  0000 C CNN
+	1    5530 1275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4230 825  4230 1275
+Wire Wire Line
+	4230 1275 4230 1975
+Connection ~ 4230 1275
+$Comp
+L kbd:SW_PUSH SW1
+U 1 1 5EA99E7A
+P 4530 1275
+F 0 "SW1" H 4530 1530 50  0000 C CNN
+F 1 "SW_PUSH" H 4530 1439 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4530 1275 50  0001 C CNN
+F 3 "" H 4530 1275 50  0000 C CNN
+	1    4530 1275
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 3355
+Wire Wire Line
+	1400 3355 1405 3355
+Text GLabel 1080 1790 0    50   Input ~ 0
+row3
+Text GLabel 1080 1690 0    50   Input ~ 0
+row2
+Text GLabel 1080 1590 0    50   Input ~ 0
+row1
+Text GLabel 1080 1490 0    50   Input ~ 0
+row0
+$Comp
+L power:GND #PWR02
+U 1 1 5EA92223
+P 630 1190
+F 0 "#PWR02" H 630 940 50  0001 C CNN
+F 1 "GND" H 635 1017 50  0000 C CNN
+F 2 "" H 630 1190 50  0001 C CNN
+F 3 "" H 630 1190 50  0001 C CNN
+	1    630  1190
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2480 890 
+NoConn ~ 2480 1990
+Text GLabel 1080 1290 0    50   Input ~ 0
+SDA
+Text GLabel 1080 1390 0    50   Input ~ 0
+SCL
+$Comp
+L kbd:ProMicro U1
+U 1 1 5EA90BD1
+P 1780 1640
+F 0 "U1" H 1780 2677 60  0000 C CNN
+F 1 "ProMicro" H 1780 2571 60  0000 C CNN
+F 2 "kbd:ProMicro_v2_1side" H 1880 590 60  0001 C CNN
+F 3 "" H 1880 590 60  0000 C CNN
+	1    1780 1640
+	1    0    0    -1  
+$EndComp
+Text GLabel 2480 1490 2    50   Input ~ 0
+col2
+Text GLabel 1080 1890 0    50   Input ~ 0
+rotA
+Text GLabel 1080 1990 0    50   Input ~ 0
+rotB
+$Comp
+L power:VCC #PWR09
+U 1 1 5F83F94E
+P 3050 3200
+F 0 "#PWR09" H 3050 3050 50  0001 C CNN
+F 1 "VCC" H 3067 3373 50  0000 C CNN
+F 2 "" H 3050 3200 50  0001 C CNN
+F 3 "" H 3050 3200 50  0001 C CNN
+	1    3050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR010
+U 1 1 5F8406A1
+P 3325 3205
+F 0 "#PWR010" H 3325 3055 50  0001 C CNN
+F 1 "VCC" H 3342 3378 50  0000 C CNN
+F 2 "" H 3325 3205 50  0001 C CNN
+F 3 "" H 3325 3205 50  0001 C CNN
+	1    3325 3205
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F889512
+P 3050 3350
+F 0 "R1" H 3120 3396 50  0000 L CNN
+F 1 "R" H 3120 3305 50  0000 L CNN
+F 2 "kbd:R" V 2980 3350 50  0001 C CNN
+F 3 "~" H 3050 3350 50  0001 C CNN
+	1    3050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F88A1AE
+P 3325 3355
+F 0 "R2" H 3395 3401 50  0000 L CNN
+F 1 "R" H 3395 3310 50  0000 L CNN
+F 2 "kbd:R" V 3255 3355 50  0001 C CNN
+F 3 "~" H 3325 3355 50  0001 C CNN
+	1    3325 3355
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 3500 3    50   Input ~ 0
+SDA
+Text GLabel 3325 3505 3    50   Input ~ 0
+SCL
+NoConn ~ 1080 890 
+Wire Wire Line
+	2845 2195 2950 2195
+Wire Wire Line
+	3150 2195 3310 2195
+Text GLabel 2845 2195 0    50   Input ~ 0
+rotB
+Text GLabel 3310 2195 2    50   Input ~ 0
+rotA
+$Comp
+L power:GND #PWR0101
+U 1 1 5FB0B72F
+P 3050 2195
+F 0 "#PWR0101" H 3050 1945 50  0001 C CNN
+F 1 "GND" H 3055 2022 50  0000 C CNN
+F 2 "" H 3050 2195 50  0001 C CNN
+F 3 "" H 3050 2195 50  0001 C CNN
+	1    3050 2195
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Rotary_Encoder SW27
+U 1 1 5FB0A177
+P 3050 2495
+F 0 "SW27" V 2947 2725 50  0000 L CNN
+F 1 "Rotary_Encoder" V 3038 2725 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E_Vertical_H20mm" H 2900 2655 50  0001 C CNN
+F 3 "~" H 3050 2755 50  0001 C CNN
+	1    3050 2495
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2525 4625 2675 4625
+Wire Wire Line
+	1125 4825 825  4825
+Wire Wire Line
+	1125 4725 825  4725
+Wire Wire Line
+	825  4725 825  4825
+Connection ~ 825  4825
+Wire Wire Line
+	825  4825 675  4825
+Text GLabel 4275 4460 1    50   Input ~ 0
+col0_r
+Text GLabel 2525 5325 2    50   Input ~ 0
+col4_r
+Text GLabel 2525 5425 2    50   Input ~ 0
+col5_r
+Text GLabel 2525 5525 2    50   Input ~ 0
+col6_r
+$Comp
+L kbd:SW_PUSH SW42
+U 1 1 5ECF8E02
+P 1190 6290
+F 0 "SW42" H 1190 6545 50  0000 C CNN
+F 1 "RESET" H 1190 6454 50  0000 C CNN
+F 2 "kbd:ResetSW" H 1190 6290 50  0001 C CNN
+F 3 "" H 1190 6290 50  0000 C CNN
+	1    1190 6290
+	1    0    0    -1  
+$EndComp
+Text GLabel 890  6290 0    50   Input ~ 0
+reset_r
+$Comp
+L kbd:MJ-4PP-9 J1
+U 1 1 5ECF8E11
+P 820 7065
+F 0 "J1" H 851 7341 50  0000 C CNN
+F 1 "MJ-4PP-9" H 851 7250 50  0000 C CNN
+F 2 "kbd:MJ-4PP-9_1side" H 1095 7240 50  0001 C CNN
+F 3 "~" H 1095 7240 50  0001 C CNN
+	1    820  7065
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5ECF8E23
+P 1790 6140
+F 0 "#FLG0101" H 1790 6215 50  0001 C CNN
+F 1 "PWR_FLAG" H 1790 6313 50  0000 C CNN
+F 2 "" H 1790 6140 50  0001 C CNN
+F 3 "~" H 1790 6140 50  0001 C CNN
+	1    1790 6140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1020 7040 1270 7040
+Wire Wire Line
+	1270 7040 1270 6890
+Wire Wire Line
+	1020 7090 1135 7090
+Wire Wire Line
+	1135 7090 1135 7290
+$Comp
+L Device:Jumper JP2
+U 1 1 5ECF8E3F
+P 2000 7140
+F 0 "JP2" H 2000 6915 50  0000 C CNN
+F 1 "JP" H 2000 7006 50  0000 C CNN
+F 2 "kbd:Jumper" H 2000 7140 50  0001 C CNN
+F 3 "~" H 2000 7140 50  0001 C CNN
+	1    2000 7140
+	-1   0    0    1   
+$EndComp
+Text GLabel 2300 7140 2    50   Input ~ 0
+data_r
+$Comp
+L Connector_Generic:Conn_01x01 P4
+U 1 1 5ECF8E46
+P 1700 7340
+F 0 "P4" V 1572 7420 50  0000 L CNN
+F 1 "i2c-pin" V 1663 7420 50  0000 L CNN
+F 2 "kbd:1pin_conn" H 1700 7340 50  0001 C CNN
+F 3 "~" H 1700 7340 50  0001 C CNN
+	1    1700 7340
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3
+U 1 1 5ECF8E4C
+P 1445 6790
+F 0 "P3" V 1409 6702 50  0000 R CNN
+F 1 "i2c-pin" V 1318 6702 50  0000 R CNN
+F 2 "kbd:1pin_conn" H 1445 6790 50  0001 C CNN
+F 3 "~" H 1445 6790 50  0001 C CNN
+	1    1445 6790
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1700 7140
+Wire Wire Line
+	1020 6990 1445 6990
+Wire Wire Line
+	1020 7140 1700 7140
+Text GLabel 1125 4625 0    50   Input ~ 0
+data_r
+Wire Wire Line
+	4275 5610 4275 6410
+Connection ~ 4275 5610
+Text GLabel 10225 5310 1    50   Input ~ 0
+col6_r
+Text GLabel 6725 7510 0    50   Input ~ 0
+row3_r
+Text GLabel 4775 6710 0    50   Input ~ 0
+row2_r
+Text GLabel 4775 5910 0    50   Input ~ 0
+row1_r
+Text GLabel 4775 5210 0    50   Input ~ 0
+row0_r
+Text GLabel 9225 4510 1    50   Input ~ 0
+col5_r
+Text GLabel 8225 4510 1    50   Input ~ 0
+col4_r
+Text GLabel 7225 4510 1    50   Input ~ 0
+col3_r
+Text GLabel 6275 4460 1    50   Input ~ 0
+col2_r
+Text GLabel 5275 4460 1    50   Input ~ 0
+col1_r
+Wire Wire Line
+	9825 7510 10825 7510
+Connection ~ 9825 7510
+Wire Wire Line
+	8825 7510 9825 7510
+Connection ~ 8825 7510
+Wire Wire Line
+	7825 7510 8825 7510
+Connection ~ 7825 7510
+Wire Wire Line
+	6875 7510 7825 7510
+Connection ~ 6875 7510
+Wire Wire Line
+	6725 7510 6875 7510
+Wire Wire Line
+	9825 6710 10825 6710
+Connection ~ 9825 6710
+Wire Wire Line
+	8825 6710 9825 6710
+Connection ~ 8825 6710
+Wire Wire Line
+	7825 6710 8825 6710
+Connection ~ 7825 6710
+Wire Wire Line
+	6875 6710 7825 6710
+Connection ~ 6875 6710
+Wire Wire Line
+	5875 6710 6875 6710
+Connection ~ 5875 6710
+Wire Wire Line
+	4875 6710 5875 6710
+Connection ~ 4875 6710
+Wire Wire Line
+	4775 6710 4875 6710
+Wire Wire Line
+	9825 5910 10825 5910
+Connection ~ 9825 5910
+Wire Wire Line
+	8825 5910 9825 5910
+Connection ~ 8825 5910
+Wire Wire Line
+	7825 5910 8825 5910
+Connection ~ 7825 5910
+Wire Wire Line
+	6875 5910 7825 5910
+Connection ~ 6875 5910
+Wire Wire Line
+	5875 5910 6875 5910
+Connection ~ 5875 5910
+Wire Wire Line
+	4875 5910 5875 5910
+Connection ~ 4875 5910
+Wire Wire Line
+	4775 5910 4875 5910
+Wire Wire Line
+	8825 5210 9825 5210
+Connection ~ 8825 5210
+Wire Wire Line
+	7825 5210 8825 5210
+Connection ~ 7825 5210
+Wire Wire Line
+	6875 5210 7825 5210
+Connection ~ 6875 5210
+Wire Wire Line
+	5875 5210 6875 5210
+Connection ~ 5875 5210
+Wire Wire Line
+	4875 5210 5875 5210
+Connection ~ 4875 5210
+Wire Wire Line
+	4775 5210 4875 5210
+Connection ~ 6275 6410
+Wire Wire Line
+	6275 6410 6275 7210
+Wire Wire Line
+	10225 6410 10225 7210
+Connection ~ 10225 6410
+Wire Wire Line
+	10225 5610 10225 6410
+Connection ~ 10225 5610
+Wire Wire Line
+	10225 5310 10225 5610
+Wire Wire Line
+	9225 6410 9225 7210
+Connection ~ 9225 6410
+Wire Wire Line
+	9225 5610 9225 6410
+Connection ~ 9225 5610
+Wire Wire Line
+	9225 4910 9225 5610
+Connection ~ 9225 4910
+Wire Wire Line
+	9225 4510 9225 4910
+Wire Wire Line
+	8225 6410 8225 7210
+Connection ~ 8225 6410
+Wire Wire Line
+	8225 5610 8225 6410
+Connection ~ 8225 5610
+Wire Wire Line
+	8225 4910 8225 5610
+Connection ~ 8225 4910
+Wire Wire Line
+	8225 4510 8225 4910
+Wire Wire Line
+	7225 6410 7225 7210
+Connection ~ 7225 6410
+Wire Wire Line
+	7225 5610 7225 6410
+Connection ~ 7225 5610
+Wire Wire Line
+	7225 4910 7225 5610
+Connection ~ 7225 4910
+Wire Wire Line
+	7225 4510 7225 4910
+Wire Wire Line
+	6275 5610 6275 6410
+Connection ~ 6275 5610
+Wire Wire Line
+	6275 4910 6275 5610
+Connection ~ 6275 4910
+Wire Wire Line
+	6275 4460 6275 4910
+Wire Wire Line
+	5275 5610 5275 6410
+Connection ~ 5275 5610
+Wire Wire Line
+	5275 4910 5275 5610
+Connection ~ 5275 4910
+Wire Wire Line
+	5275 4460 5275 4910
+$Comp
+L Simulation_SPICE:DIODE D50
+U 1 1 5ECF8EB8
+P 10825 7360
+F 0 "D50" V 10779 7440 50  0000 L CNN
+F 1 "DIODE" V 10870 7440 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10825 7360 50  0001 C CNN
+F 3 "~" H 10825 7360 50  0001 C CNN
+F 4 "Y" H 10825 7360 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10825 7360 50  0001 L CNN "Spice_Primitive"
+	1    10825 7360
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D49
+U 1 1 5ECF8EC0
+P 9825 7360
+F 0 "D49" V 9779 7440 50  0000 L CNN
+F 1 "DIODE" V 9870 7440 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9825 7360 50  0001 C CNN
+F 3 "~" H 9825 7360 50  0001 C CNN
+F 4 "Y" H 9825 7360 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9825 7360 50  0001 L CNN "Spice_Primitive"
+	1    9825 7360
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D48
+U 1 1 5ECF8EC8
+P 8825 7360
+F 0 "D48" V 8779 7440 50  0000 L CNN
+F 1 "DIODE" V 8870 7440 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8825 7360 50  0001 C CNN
+F 3 "~" H 8825 7360 50  0001 C CNN
+F 4 "Y" H 8825 7360 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8825 7360 50  0001 L CNN "Spice_Primitive"
+	1    8825 7360
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D47
+U 1 1 5ECF8ED0
+P 7825 7360
+F 0 "D47" V 7779 7440 50  0000 L CNN
+F 1 "DIODE" V 7870 7440 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7825 7360 50  0001 C CNN
+F 3 "~" H 7825 7360 50  0001 C CNN
+F 4 "Y" H 7825 7360 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7825 7360 50  0001 L CNN "Spice_Primitive"
+	1    7825 7360
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D46
+U 1 1 5ECF8ED8
+P 6875 7360
+F 0 "D46" V 6829 7440 50  0000 L CNN
+F 1 "DIODE" V 6920 7440 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6875 7360 50  0001 C CNN
+F 3 "~" H 6875 7360 50  0001 C CNN
+F 4 "Y" H 6875 7360 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6875 7360 50  0001 L CNN "Spice_Primitive"
+	1    6875 7360
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D45
+U 1 1 5ECF8EE0
+P 10825 6560
+F 0 "D45" V 10779 6640 50  0000 L CNN
+F 1 "DIODE" V 10870 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10825 6560 50  0001 C CNN
+F 3 "~" H 10825 6560 50  0001 C CNN
+F 4 "Y" H 10825 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10825 6560 50  0001 L CNN "Spice_Primitive"
+	1    10825 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D44
+U 1 1 5ECF8EE8
+P 9825 6560
+F 0 "D44" V 9779 6640 50  0000 L CNN
+F 1 "DIODE" V 9870 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9825 6560 50  0001 C CNN
+F 3 "~" H 9825 6560 50  0001 C CNN
+F 4 "Y" H 9825 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9825 6560 50  0001 L CNN "Spice_Primitive"
+	1    9825 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D43
+U 1 1 5ECF8EF0
+P 8825 6560
+F 0 "D43" V 8779 6640 50  0000 L CNN
+F 1 "DIODE" V 8870 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8825 6560 50  0001 C CNN
+F 3 "~" H 8825 6560 50  0001 C CNN
+F 4 "Y" H 8825 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8825 6560 50  0001 L CNN "Spice_Primitive"
+	1    8825 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D42
+U 1 1 5ECF8EF8
+P 7825 6560
+F 0 "D42" V 7779 6640 50  0000 L CNN
+F 1 "DIODE" V 7870 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7825 6560 50  0001 C CNN
+F 3 "~" H 7825 6560 50  0001 C CNN
+F 4 "Y" H 7825 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7825 6560 50  0001 L CNN "Spice_Primitive"
+	1    7825 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D41
+U 1 1 5ECF8F00
+P 6875 6560
+F 0 "D41" V 6829 6640 50  0000 L CNN
+F 1 "DIODE" V 6920 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6875 6560 50  0001 C CNN
+F 3 "~" H 6875 6560 50  0001 C CNN
+F 4 "Y" H 6875 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6875 6560 50  0001 L CNN "Spice_Primitive"
+	1    6875 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D40
+U 1 1 5ECF8F08
+P 5875 6560
+F 0 "D40" V 5829 6640 50  0000 L CNN
+F 1 "DIODE" V 5920 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5875 6560 50  0001 C CNN
+F 3 "~" H 5875 6560 50  0001 C CNN
+F 4 "Y" H 5875 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5875 6560 50  0001 L CNN "Spice_Primitive"
+	1    5875 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D39
+U 1 1 5ECF8F10
+P 4875 6560
+F 0 "D39" V 4829 6640 50  0000 L CNN
+F 1 "DIODE" V 4920 6640 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4875 6560 50  0001 C CNN
+F 3 "~" H 4875 6560 50  0001 C CNN
+F 4 "Y" H 4875 6560 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4875 6560 50  0001 L CNN "Spice_Primitive"
+	1    4875 6560
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D38
+U 1 1 5ECF8F18
+P 10825 5760
+F 0 "D38" V 10779 5840 50  0000 L CNN
+F 1 "DIODE" V 10870 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 10825 5760 50  0001 C CNN
+F 3 "~" H 10825 5760 50  0001 C CNN
+F 4 "Y" H 10825 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 10825 5760 50  0001 L CNN "Spice_Primitive"
+	1    10825 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D37
+U 1 1 5ECF8F20
+P 9825 5760
+F 0 "D37" V 9779 5840 50  0000 L CNN
+F 1 "DIODE" V 9870 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9825 5760 50  0001 C CNN
+F 3 "~" H 9825 5760 50  0001 C CNN
+F 4 "Y" H 9825 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9825 5760 50  0001 L CNN "Spice_Primitive"
+	1    9825 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D36
+U 1 1 5ECF8F28
+P 8825 5760
+F 0 "D36" V 8779 5840 50  0000 L CNN
+F 1 "DIODE" V 8870 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8825 5760 50  0001 C CNN
+F 3 "~" H 8825 5760 50  0001 C CNN
+F 4 "Y" H 8825 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8825 5760 50  0001 L CNN "Spice_Primitive"
+	1    8825 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D35
+U 1 1 5ECF8F30
+P 7825 5760
+F 0 "D35" V 7779 5840 50  0000 L CNN
+F 1 "DIODE" V 7870 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7825 5760 50  0001 C CNN
+F 3 "~" H 7825 5760 50  0001 C CNN
+F 4 "Y" H 7825 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7825 5760 50  0001 L CNN "Spice_Primitive"
+	1    7825 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D34
+U 1 1 5ECF8F38
+P 6875 5760
+F 0 "D34" V 6829 5840 50  0000 L CNN
+F 1 "DIODE" V 6920 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6875 5760 50  0001 C CNN
+F 3 "~" H 6875 5760 50  0001 C CNN
+F 4 "Y" H 6875 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6875 5760 50  0001 L CNN "Spice_Primitive"
+	1    6875 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D33
+U 1 1 5ECF8F40
+P 5875 5760
+F 0 "D33" V 5829 5840 50  0000 L CNN
+F 1 "DIODE" V 5920 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5875 5760 50  0001 C CNN
+F 3 "~" H 5875 5760 50  0001 C CNN
+F 4 "Y" H 5875 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5875 5760 50  0001 L CNN "Spice_Primitive"
+	1    5875 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D32
+U 1 1 5ECF8F48
+P 4875 5760
+F 0 "D32" V 4829 5840 50  0000 L CNN
+F 1 "DIODE" V 4920 5840 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4875 5760 50  0001 C CNN
+F 3 "~" H 4875 5760 50  0001 C CNN
+F 4 "Y" H 4875 5760 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4875 5760 50  0001 L CNN "Spice_Primitive"
+	1    4875 5760
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D31
+U 1 1 5ECF8F50
+P 9825 5060
+F 0 "D31" V 9779 5140 50  0000 L CNN
+F 1 "DIODE" V 9870 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 9825 5060 50  0001 C CNN
+F 3 "~" H 9825 5060 50  0001 C CNN
+F 4 "Y" H 9825 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 9825 5060 50  0001 L CNN "Spice_Primitive"
+	1    9825 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D30
+U 1 1 5ECF8F58
+P 8825 5060
+F 0 "D30" V 8779 5140 50  0000 L CNN
+F 1 "DIODE" V 8870 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 8825 5060 50  0001 C CNN
+F 3 "~" H 8825 5060 50  0001 C CNN
+F 4 "Y" H 8825 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 8825 5060 50  0001 L CNN "Spice_Primitive"
+	1    8825 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D29
+U 1 1 5ECF8F60
+P 7825 5060
+F 0 "D29" V 7779 5140 50  0000 L CNN
+F 1 "DIODE" V 7870 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 7825 5060 50  0001 C CNN
+F 3 "~" H 7825 5060 50  0001 C CNN
+F 4 "Y" H 7825 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7825 5060 50  0001 L CNN "Spice_Primitive"
+	1    7825 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D28
+U 1 1 5ECF8F68
+P 6875 5060
+F 0 "D28" V 6829 5140 50  0000 L CNN
+F 1 "DIODE" V 6920 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 6875 5060 50  0001 C CNN
+F 3 "~" H 6875 5060 50  0001 C CNN
+F 4 "Y" H 6875 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6875 5060 50  0001 L CNN "Spice_Primitive"
+	1    6875 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D27
+U 1 1 5ECF8F70
+P 5875 5060
+F 0 "D27" V 5829 5140 50  0000 L CNN
+F 1 "DIODE" V 5920 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 5875 5060 50  0001 C CNN
+F 3 "~" H 5875 5060 50  0001 C CNN
+F 4 "Y" H 5875 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 5875 5060 50  0001 L CNN "Spice_Primitive"
+	1    5875 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D26
+U 1 1 5ECF8F78
+P 4875 5060
+F 0 "D26" V 4829 5140 50  0000 L CNN
+F 1 "DIODE" V 4920 5140 50  0000 L CNN
+F 2 "kbd:D3_TH" H 4875 5060 50  0001 C CNN
+F 3 "~" H 4875 5060 50  0001 C CNN
+F 4 "Y" H 4875 5060 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4875 5060 50  0001 L CNN "Spice_Primitive"
+	1    4875 5060
+	0    1    1    0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW50
+U 1 1 5ECF8F7E
+P 6575 7210
+F 0 "SW50" H 6575 7465 50  0000 C CNN
+F 1 "SW_PUSH" H 6575 7374 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6575 7210 50  0001 C CNN
+F 3 "" H 6575 7210 50  0000 C CNN
+	1    6575 7210
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW51
+U 1 1 5ECF8F84
+P 7525 7210
+F 0 "SW51" H 7525 7465 50  0000 C CNN
+F 1 "SW_PUSH" H 7525 7374 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7525 7210 50  0001 C CNN
+F 3 "" H 7525 7210 50  0000 C CNN
+	1    7525 7210
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW52
+U 1 1 5ECF8F8A
+P 8525 7210
+F 0 "SW52" H 8525 7465 50  0000 C CNN
+F 1 "SW_PUSH" H 8525 7374 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8525 7210 50  0001 C CNN
+F 3 "" H 8525 7210 50  0000 C CNN
+	1    8525 7210
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW53
+U 1 1 5ECF8F90
+P 9525 7210
+F 0 "SW53" H 9525 7465 50  0000 C CNN
+F 1 "SW_PUSH" H 9525 7374 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9525 7210 50  0001 C CNN
+F 3 "" H 9525 7210 50  0000 C CNN
+	1    9525 7210
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW54
+U 1 1 5ECF8F96
+P 10525 7210
+F 0 "SW54" H 10525 7465 50  0000 C CNN
+F 1 "SW_PUSH" H 10525 7374 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10525 7210 50  0001 C CNN
+F 3 "" H 10525 7210 50  0000 C CNN
+	1    10525 7210
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW49
+U 1 1 5ECF8F9C
+P 10525 6410
+F 0 "SW49" H 10525 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 10525 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10525 6410 50  0001 C CNN
+F 3 "" H 10525 6410 50  0000 C CNN
+	1    10525 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW40
+U 1 1 5ECF8FA2
+P 10525 5610
+F 0 "SW40" H 10525 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 10525 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 10525 5610 50  0001 C CNN
+F 3 "" H 10525 5610 50  0000 C CNN
+	1    10525 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW48
+U 1 1 5ECF8FA8
+P 9525 6410
+F 0 "SW48" H 9525 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 9525 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9525 6410 50  0001 C CNN
+F 3 "" H 9525 6410 50  0000 C CNN
+	1    9525 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW47
+U 1 1 5ECF8FAE
+P 8525 6410
+F 0 "SW47" H 8525 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 8525 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8525 6410 50  0001 C CNN
+F 3 "" H 8525 6410 50  0000 C CNN
+	1    8525 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW46
+U 1 1 5ECF8FB4
+P 7525 6410
+F 0 "SW46" H 7525 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 7525 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7525 6410 50  0001 C CNN
+F 3 "" H 7525 6410 50  0000 C CNN
+	1    7525 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW45
+U 1 1 5ECF8FBA
+P 6575 6410
+F 0 "SW45" H 6575 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 6575 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6575 6410 50  0001 C CNN
+F 3 "" H 6575 6410 50  0000 C CNN
+	1    6575 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW44
+U 1 1 5ECF8FC0
+P 5575 6410
+F 0 "SW44" H 5575 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 5575 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5575 6410 50  0001 C CNN
+F 3 "" H 5575 6410 50  0000 C CNN
+	1    5575 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW43
+U 1 1 5ECF8FC6
+P 4575 6410
+F 0 "SW43" H 4575 6665 50  0000 C CNN
+F 1 "SW_PUSH" H 4575 6574 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4575 6410 50  0001 C CNN
+F 3 "" H 4575 6410 50  0000 C CNN
+	1    4575 6410
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW39
+U 1 1 5ECF8FCC
+P 9525 5610
+F 0 "SW39" H 9525 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 9525 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9525 5610 50  0001 C CNN
+F 3 "" H 9525 5610 50  0000 C CNN
+	1    9525 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW38
+U 1 1 5ECF8FD2
+P 8525 5610
+F 0 "SW38" H 8525 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 8525 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8525 5610 50  0001 C CNN
+F 3 "" H 8525 5610 50  0000 C CNN
+	1    8525 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW37
+U 1 1 5ECF8FD8
+P 7525 5610
+F 0 "SW37" H 7525 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 7525 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7525 5610 50  0001 C CNN
+F 3 "" H 7525 5610 50  0000 C CNN
+	1    7525 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW36
+U 1 1 5ECF8FDE
+P 6575 5610
+F 0 "SW36" H 6575 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 6575 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6575 5610 50  0001 C CNN
+F 3 "" H 6575 5610 50  0000 C CNN
+	1    6575 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW35
+U 1 1 5ECF8FE4
+P 5575 5610
+F 0 "SW35" H 5575 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 5575 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5575 5610 50  0001 C CNN
+F 3 "" H 5575 5610 50  0000 C CNN
+	1    5575 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW34
+U 1 1 5ECF8FEA
+P 4575 5610
+F 0 "SW34" H 4575 5865 50  0000 C CNN
+F 1 "SW_PUSH" H 4575 5774 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4575 5610 50  0001 C CNN
+F 3 "" H 4575 5610 50  0000 C CNN
+	1    4575 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW33
+U 1 1 5ECF8FF0
+P 9525 4910
+F 0 "SW33" H 9525 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 9525 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 9525 4910 50  0001 C CNN
+F 3 "" H 9525 4910 50  0000 C CNN
+	1    9525 4910
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW32
+U 1 1 5ECF8FF6
+P 8525 4910
+F 0 "SW32" H 8525 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 8525 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 8525 4910 50  0001 C CNN
+F 3 "" H 8525 4910 50  0000 C CNN
+	1    8525 4910
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW31
+U 1 1 5ECF8FFC
+P 7525 4910
+F 0 "SW31" H 7525 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 7525 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 7525 4910 50  0001 C CNN
+F 3 "" H 7525 4910 50  0000 C CNN
+	1    7525 4910
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW30
+U 1 1 5ECF9002
+P 6575 4910
+F 0 "SW30" H 6575 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 6575 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 6575 4910 50  0001 C CNN
+F 3 "" H 6575 4910 50  0000 C CNN
+	1    6575 4910
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW29
+U 1 1 5ECF9008
+P 5575 4910
+F 0 "SW29" H 5575 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 5575 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 5575 4910 50  0001 C CNN
+F 3 "" H 5575 4910 50  0000 C CNN
+	1    5575 4910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 4460 4275 4910
+Wire Wire Line
+	4275 4910 4275 5610
+Connection ~ 4275 4910
+$Comp
+L kbd:SW_PUSH SW28
+U 1 1 5ECF9011
+P 4575 4910
+F 0 "SW28" H 4575 5165 50  0000 C CNN
+F 1 "SW_PUSH" H 4575 5074 50  0000 C CNN
+F 2 "kbd:CherryMX_1u" H 4575 4910 50  0001 C CNN
+F 3 "" H 4575 4910 50  0000 C CNN
+	1    4575 4910
+	1    0    0    -1  
+$EndComp
+Connection ~ 1445 6990
+Wire Wire Line
+	1445 6990 1450 6990
+Text GLabel 1125 5425 0    50   Input ~ 0
+row3_r
+Text GLabel 1125 5325 0    50   Input ~ 0
+row2_r
+Text GLabel 1125 5225 0    50   Input ~ 0
+row1_r
+Text GLabel 1125 5125 0    50   Input ~ 0
+row0_r
+NoConn ~ 2525 4525
+NoConn ~ 2525 5625
+Text GLabel 1125 4925 0    50   Input ~ 0
+SDA_r
+Text GLabel 1125 5025 0    50   Input ~ 0
+SCL_r
+$Comp
+L kbd:ProMicro U2
+U 1 1 5ECF9027
+P 1825 5275
+F 0 "U2" H 1825 6312 60  0000 C CNN
+F 1 "ProMicro" H 1825 6206 60  0000 C CNN
+F 2 "kbd:ProMicro_v2_1side" H 1925 4225 60  0001 C CNN
+F 3 "" H 1925 4225 60  0000 C CNN
+	1    1825 5275
+	1    0    0    -1  
+$EndComp
+Text GLabel 1125 5525 0    50   Input ~ 0
+rotA_r
+Text GLabel 1125 5625 0    50   Input ~ 0
+rotB_r
+$Comp
+L Device:R R3
+U 1 1 5ECF903C
+P 3095 6985
+F 0 "R3" H 3165 7031 50  0000 L CNN
+F 1 "R" H 3165 6940 50  0000 L CNN
+F 2 "kbd:R" V 3025 6985 50  0001 C CNN
+F 3 "~" H 3095 6985 50  0001 C CNN
+	1    3095 6985
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5ECF9042
+P 3370 6990
+F 0 "R4" H 3440 7036 50  0000 L CNN
+F 1 "R" H 3440 6945 50  0000 L CNN
+F 2 "kbd:R" V 3300 6990 50  0001 C CNN
+F 3 "~" H 3370 6990 50  0001 C CNN
+	1    3370 6990
+	1    0    0    -1  
+$EndComp
+Text GLabel 3095 7135 3    50   Input ~ 0
+SDA_r
+Text GLabel 3370 7140 3    50   Input ~ 0
+SCL_r
+NoConn ~ 1125 4525
+Wire Wire Line
+	2890 5830 2995 5830
+Text GLabel 2890 5830 0    50   Input ~ 0
+rotB_r
+Text GLabel 3355 5830 2    50   Input ~ 0
+rotA_r
+Text GLabel 2525 4925 2    50   Input ~ 0
+col0_r
+Text GLabel 2975 4725 2    50   Input ~ 0
+reset_r
+Wire Wire Line
+	2525 4725 2975 4725
+Text GLabel 2525 5125 2    50   Input ~ 0
+col2_r
+Text GLabel 2525 5225 2    50   Input ~ 0
+col3_r
+Text GLabel 2525 5025 2    50   Input ~ 0
+col1_r
+$Comp
+L power:GNDA #PWR04
+U 1 1 5ED3C4D9
+P 2675 4625
+F 0 "#PWR04" H 2675 4375 50  0001 C CNN
+F 1 "GNDA" V 2680 4497 50  0000 R CNN
+F 2 "" H 2675 4625 50  0001 C CNN
+F 3 "" H 2675 4625 50  0001 C CNN
+	1    2675 4625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR07
+U 1 1 5ED1845C
+P 675 4825
+F 0 "#PWR07" H 675 4575 50  0001 C CNN
+F 1 "GNDA" V 680 4697 50  0000 R CNN
+F 2 "" H 675 4825 50  0001 C CNN
+F 3 "" H 675 4825 50  0001 C CNN
+	1    675  4825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR013
+U 1 1 5ED59055
+P 3095 5830
+F 0 "#PWR013" H 3095 5580 50  0001 C CNN
+F 1 "GNDA" V 3100 5702 50  0000 R CNN
+F 2 "" H 3095 5830 50  0001 C CNN
+F 3 "" H 3095 5830 50  0001 C CNN
+	1    3095 5830
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Rotary_Encoder SW41
+U 1 1 5ECF9055
+P 3095 6130
+F 0 "SW41" V 2992 6360 50  0000 L CNN
+F 1 "Rotary_Encoder" V 3083 6360 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E_Vertical_H20mm" H 2945 6290 50  0001 C CNN
+F 3 "~" H 3095 6390 50  0001 C CNN
+	1    3095 6130
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3195 5830 3355 5830
+$Comp
+L power:GNDA #PWR014
+U 1 1 5ED7523B
+P 1790 6140
+F 0 "#PWR014" H 1790 5890 50  0001 C CNN
+F 1 "GNDA" V 1795 6012 50  0000 R CNN
+F 2 "" H 1790 6140 50  0001 C CNN
+F 3 "" H 1790 6140 50  0001 C CNN
+	1    1790 6140
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5ECF8E29
+P 2190 6140
+F 0 "#FLG0102" H 2190 6215 50  0001 C CNN
+F 1 "PWR_FLAG" H 2190 6313 50  0000 C CNN
+F 2 "" H 2190 6140 50  0001 C CNN
+F 3 "~" H 2190 6140 50  0001 C CNN
+	1    2190 6140
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR015
+U 1 1 5ED9BA7C
+P 1490 6290
+F 0 "#PWR015" H 1490 6040 50  0001 C CNN
+F 1 "GNDA" V 1495 6162 50  0000 R CNN
+F 2 "" H 1490 6290 50  0001 C CNN
+F 3 "" H 1490 6290 50  0001 C CNN
+	1    1490 6290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR016
+U 1 1 5EDA1D94
+P 1135 7290
+F 0 "#PWR016" H 1135 7040 50  0001 C CNN
+F 1 "GNDA" V 1140 7162 50  0000 R CNN
+F 2 "" H 1135 7290 50  0001 C CNN
+F 3 "" H 1135 7290 50  0001 C CNN
+	1    1135 7290
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EDC7FD9
+P 2525 4825
+F 0 "#PWR?" H 2525 4675 50  0001 C CNN
+F 1 "VDD" V 2542 4953 50  0000 L CNN
+F 2 "" H 2525 4825 50  0001 C CNN
+F 3 "" H 2525 4825 50  0001 C CNN
+	1    2525 4825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EDC8C71
+P 2190 6140
+F 0 "#PWR?" H 2190 5990 50  0001 C CNN
+F 1 "VDD" V 2207 6268 50  0000 L CNN
+F 2 "" H 2190 6140 50  0001 C CNN
+F 3 "" H 2190 6140 50  0001 C CNN
+	1    2190 6140
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EDDDAD9
+P 1270 6890
+F 0 "#PWR?" H 1270 6740 50  0001 C CNN
+F 1 "VDD" V 1287 7018 50  0000 L CNN
+F 2 "" H 1270 6890 50  0001 C CNN
+F 3 "" H 1270 6890 50  0001 C CNN
+	1    1270 6890
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EE1510C
+P 3095 6835
+F 0 "#PWR?" H 3095 6685 50  0001 C CNN
+F 1 "VDD" H 3112 7008 50  0000 C CNN
+F 2 "" H 3095 6835 50  0001 C CNN
+F 3 "" H 3095 6835 50  0001 C CNN
+	1    3095 6835
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5EE16387
+P 3370 6840
+F 0 "#PWR?" H 3370 6690 50  0001 C CNN
+F 1 "VDD" H 3387 7013 50  0000 C CNN
+F 2 "" H 3370 6840 50  0001 C CNN
+F 3 "" H 3370 6840 50  0001 C CNN
+	1    3370 6840
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
